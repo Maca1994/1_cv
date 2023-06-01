@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Pangolin&family=Playfair:wght@300&family=Titillium+Web:ital,wght@0,200;0,400;1,200&family=Yellowtail&display=swap');
+
+:root{
+    --blue:#2980b9;
+    --black:#333;
+    --white:#fff;
+    --ligh-color:#777;
+    --ligh-bg:#eee;
+    --box-shadow:0 5px 10px rgba(0,0,0,.1);
+}
+
+*{
+    font-family: 'Pangolin', cursive;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline:none;
+    text-decoration: none;
+    transition: all .2s linear;
+}
+
+html ::-webkit-scrollbar{
+    width: 10px;
+}
+
+html ::-webkit-scrollbar-track{
+    background: var(--blue);
+}
+
+html ::-webkit-scrollbar-tum b{
+    background: var(--white);
+    border-radius: 50px;
+} 
+
+.title{
+    font-size: 25px;
+    color: var(--blue);
+    margin-bottom: 15px;
+}
+
+.container{
+    padding: 100px 9px;
+    background: linear-gradient(45deg,rgb(142, 87, 153), var(--ligh-color));
+    display: flex;
+}
+
+.container .profile{
+    flex:1 1 400px;
+    background: var(--white);
+    padding: 20px 30px;
+    text-align: center;
+    position: sticky;
+    top: 20px; left:0;
+    border-right: 2px solid var(--black);
+    align-self: flex-start;
+}
+
+.container .profile img{
+    height: 150px;
+    width: 150px;
+    border-radius: 50px;
+    border: 2px solid var(--black);
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.container .profile h3{
+    color: var(--black);
+    font-size: 20px;
+}
+
+.container .profile p{
+    color: var(--blue);
+    padding: 5px 0;
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+.container .profile .share{
+    margin: 10px 0;
+}
+
+.container .profile .share a{
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    font-size: 20px;
+    border-radius: 50px;
+    color: var(--black);
+    background: var(--ligh-bg);
+ }
+
+ .container .profile .share a:hover{
+    background: var(--blue);
+    color: var(--white);
+    box-shadow: var(--box-shadow);
+ }
+
+.container .information{
+    flex: 1 1 1000px;
+    background: var(--white);
+    padding: 20px 30px;
+}
+
+.container .information .about p{
+    font-size: 17px;
+    line-height: 2;
+    padding: 5px 0;
+    color: var(--ligh-color);
+}
+
+.container .information .about .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.container .information .about .box-container .box{
+flex: 1 1 250px;
+}
+
+.container .information .about .box-container .box h3{
+    font-size: 15px;
+    padding: 10px 0;
+    color: var(--black);
+}
+
+.container .information .about .box-container .box h3 span{
+    color: var(--ligh-color);
+}
+
+.container .information .domain{
+    padding: 20px 0;
+}
+
+.container .information .domain .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.container .information .domain .box-container .box{
+    flex: 1 1 17px;
+    text-align: center;
+    border-radius: 5px;
+    padding: 20px;
+    background-color: var(--ligh-bg);
+}
+
+.container .information .domain .box-container .box img{
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.container .information .domain .box-container .box h3{
+    font-size: 15px;
+    color: #777;
+}
+
+.skills {
+    margin: 10px 0;
+}
+
+.btnn{
+    margin-top: 10px;
+    display: inline-block;
+    padding: 7px 20px;
+    border-radius: 5px;
+    background: var(--ligh-color);
+    color: var(--white);
+    font-size: 17px;
+    box-shadow: var(--box-shadow);
+}
+
+.btnn:hover{
+background: var(--black);
+}
+
+.container .information .experience{
+    margin: 20px 0;
+}
+
+.container .information .experience .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.container .information .experience .box-container .box{
+    padding: 20px;
+    border-radius: 5px;
+    flex: 1 1 350px;
+    background: var(--ligh-bg);
+}
+
+.container .information .experience .box-container .box span{
+    color: var(--blue);
+    font-size: 15px;
+}
+
+.container .information .experience .box-container .box h3{
+    color: var(--black);
+    font-size: 17px;
+    padding:5px 0;
+}
+
+.container .information .experience .box-container .box p{
+    color: var(--ligh-color);
+    line-height: 2;
+    font-size: 14px;
+}
+   
+.container .information .contact .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15pc;
+}
+
+.container .information .contact .box-container .box{
+    flex: 1 1 200px;
+    display: flex;
+    align-self: flex-start;
+    gap: 10px;
+}
+
+.container .information .contact .box-container .box img{
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    font-size: 15px;
+    border-radius: 50%;
+    background: var(--blue);
+    color: var(--white);
+    text-align: center;
+}
+
+.container .information .contact .box-container .box h3{
+    font-size: 17px;
+    color: var(--black);
+    padding-bottom: 5px;
+}
+
+.container .information .contact .box-container .box p{
+    font-size: 14px;
+    color: var(--ligh-color);
+    line-height: 2;
+}
+
+
